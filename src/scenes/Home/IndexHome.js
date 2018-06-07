@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import MainMenu from './Menu';
 import Footer from './Footer';
-import logo from './logo.svg';
-import './App.css';
+import logo from './../../resources/logo.svg';
+import './Index.css';
 
-class App extends Component {
+class IndexHome extends Component {
   render() {
     return (
       <div className="app">
@@ -18,4 +18,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default IndexHome;

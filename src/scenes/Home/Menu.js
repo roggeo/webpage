@@ -2,15 +2,25 @@ import React, { Component } from 'react';
 import './Menu.css';
 
 class Menu extends Component {
+
+  buttons() {
+    return [
+      {name: 'About me', 'link': '#'},
+      {name: 'Contact', 'link': '#'},
+      {name: 'Github', 'link': '#'}
+    ];
+  }
+
   render() {
-    const mainMenu = ['Home', 'About me'];
-    const mainMenuItems = mainMenu.map((menu) =>
-      <li>{menu}</li>
-    ); 
+
+    var rendMenu = this.buttons().map((menu) =>
+      <li><a href={menu.link}>{menu.name}</a></li>  
+    );
+
     return (      
-        <side className="sidebar-menu">
-          <ul>{mainMenuItems}</ul>
-        </side>
+        <div className="sidebar-menu show">
+          <ul>{rendMenu}</ul>
+        </div>
     );
   }
 }

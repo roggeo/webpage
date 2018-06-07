@@ -1,0 +1,7 @@
+.sidebar-menu.show{
+    width: 20vw;
+    background: #ff0000;
+    float:left;
+    height: 100%;
+    position: absolute;
+}

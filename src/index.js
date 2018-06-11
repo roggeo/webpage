@@ -4,7 +4,9 @@ import './index.css';
 import IndexHome from './scenes/Home/IndexHome';
 import registerServiceWorker from './services/registerServiceWorker';
 
+// Website datas
 var siteName = 'Roggeo';
 
+ReactDOM.render(siteName, document.querySelector('head title'));
 ReactDOM.render(<IndexHome />, document.getElementById('main'));
 registerServiceWorker();

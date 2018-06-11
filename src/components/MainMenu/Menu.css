@@ -1,0 +1,42 @@
+.sidebar-menu{
+    display: none;
+    font-size: 1.4em;
+}
+.sidebar-menu.show{
+    display: block;
+    width: 20vw;
+    background: #2c89a0ff;
+    float:left;
+    height: 100%;
+    position: absolute;
+    padding-top: 46px;
+}
+.sidebar-menu ul{
+    padding: 0;
+}
+.sidebar-menu li{
+    list-style: none;
+}
+.sidebar-menu li a{
+    color: #cdd9e2;
+    text-decoration: none;
+    padding: 15px 0 15px 10px;
+    float: left;    
+    width: 96.2%;
+}
+.sidebar-menu li a:hover{
+    background:#1c748a;
+    color: white;
+}
+.sidebar-menu li a i{
+    margin-right:12px;
+}
+#btn-show-menu{
+    color: #cdd9e2;
+    font-size: 2.5em;
+    margin-left: 10px;
+    float: left;
+    margin-top: 12px;
+    position: absolute;
+    z-index: 99;
+}

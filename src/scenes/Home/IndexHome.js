@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import MainMenu from './Menu';
+import MainMenu from './../../components/MainMenu/Menu';
 import Footer from './Footer';
 import logo from './../../resources/logo.svg';
-import './Index.css';
+import './IndexHome.css';
 
 class IndexHome extends Component {
   render() {

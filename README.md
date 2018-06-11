@@ -16,9 +16,11 @@ The webpage.
 
 ## Test
 
+    cd wepage
     npm test
 
 
 ## Building
 
+    cd wepage
     npm run build

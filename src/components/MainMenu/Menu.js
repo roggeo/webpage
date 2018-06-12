@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import Icon from 'react-fontawesome';
 import './Menu.css';
+
 
 class Menu extends Component {
 
@@ -31,11 +33,11 @@ class Menu extends Component {
           </a>
           <div className={boxClass.join(' ')}>
             <ul>
-              <li><a href="#"><i className="fa fa-home"></i> Home</a></li>
-              <li><a href="#"><i className="fa fa-user-astronaut"></i> About me</a></li>
-              <li><a href="#"><i className="fa fa-comment"></i> Contact</a></li>
+              <li><a href="#"><Icon name='home'/> Home</a></li>
+              <li><a href="#"><Icon name='user-astronaut'/> About me</a></li>
+              <li><a href="#"><Icon name='comment'/> Contact</a></li>
               <li><a href="#"><i className="fab fa-github"></i> Github</a></li>
-              <li><a href="#"><i className="fa fa-code"></i> Code of this</a></li>
+              <li><a href="#"><Icon name='code'/> Code of this</a></li>
             </ul>
           </div>
         </div>

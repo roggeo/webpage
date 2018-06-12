@@ -4,6 +4,9 @@ import './index.css';
 import IndexHome from './scenes/Home/IndexHome';
 import registerServiceWorker from './services/registerServiceWorker';
 
+//CSS Components
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 // Website datas
 var siteName = 'Roggeo';
 

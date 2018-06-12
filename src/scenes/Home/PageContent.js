@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import './PageContent.css';
+import { Button } from 'reactstrap';
+
 
 class PageContent extends Component {
     render(){
         return(
             <section className="page-content-wrap">
                 <article className="content">
-                    
+                    <Button color="danger">Danger!</Button>
                     <div className="article-box-list">
                         <h1>PHP</h1>
                         <p>Content mainly</p>

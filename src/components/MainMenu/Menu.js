@@ -26,7 +26,7 @@ class Menu extends Component {
 
     return (
         <div>
-          <a id="btn-show-menu" href="javascript:;" onClick={this.handleClick.bind(this)}>
+          <a id="btn-show-menu" href="javascript:;" className={(this.state.addClass)? 'menu-fixed':''} onClick={this.handleClick.bind(this)}>
             <i className={iconBtn.join(' ')}></i>
           </a>
           <div className={boxClass.join(' ')}>

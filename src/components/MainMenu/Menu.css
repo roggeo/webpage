@@ -1,28 +1,32 @@
 .sidebar-menu{
     display: none;
     font-size: 1.4em;
+    width: 295px;
 }
 .sidebar-menu.show{
     display: block;
-    width: 20vw;
     background: #2c89a0ff;
     float:left;
     height: 100%;
-    position: absolute;
+    position: fixed;
     padding-top: 46px;
+    box-shadow: 6px -3px 6px #0000004a;
 }
 .sidebar-menu ul{
     padding: 0;
+    float: left;
 }
 .sidebar-menu li{
     list-style: none;
+    width: 100%;
+    float: left;
 }
 .sidebar-menu li a{
-    color: #cdd9e2;
+    color: white;
     text-decoration: none;
     padding: 15px 0 15px 10px;
     float: left;    
-    width: 96.2%;
+    width: 96.5%;
 }
 .sidebar-menu li a:hover{
     background:#1c748a;
@@ -32,7 +36,7 @@
     margin-right:12px;
 }
 #btn-show-menu{
-    color: #cdd9e2;
+    color: white;
     font-size: 2.5em;
     margin-left: 10px;
     float: left;
@@ -40,3 +44,12 @@
     position: absolute;
     z-index: 99;
 }
+#btn-show-menu.menu-fixed{
+    position:fixed;
+}
+
+@media screen and (max-width: 442px){
+    #btn-show-menu{
+        font-size: 1.8em;
+    }
+  }

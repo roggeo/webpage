@@ -1,0 +1,21 @@
+.page-content-wrap .content {
+    color: white;
+    margin: 0 auto;
+    padding: 25px 25px;
+}
+
+.page-content-wrap .article-box-list{
+    margin-bottom: 50px;
+    border-bottom: 1px #749398 solid;
+}
+
+@media screen and (min-width: 992px){
+    .page-content-wrap .content {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 991px){
+    .page-content-wrap .content {
+        width: 90%;
+    }
+}

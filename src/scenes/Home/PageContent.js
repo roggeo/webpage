@@ -16,7 +16,7 @@ class PageContent extends Component {
                     </div>
                     <div className="article-box-list">
                         <h1>NodeJS</h1>
-                        <p>Amazing plataform to running a commun tecnology in all smartyphones around the world, JavaScript.</p>
+                        <p>Amazing plataform to running a commun tecnology in all browsers, smarty TVs and smarty phones around the world, JavaScript.</p>
                     </div>
                     <div className="article-box-list">
                         <h1>Express</h1>
@@ -24,7 +24,7 @@ class PageContent extends Component {
                     </div>
                     <div className="article-box-list">
                         <h1>ReactJS</h1>
-                        <p>Incredible tool to make beatiful pages</p>
+                        <p>Incredible tool to make beatiful pages.</p>
                     </div>
                 </article>
             </section>

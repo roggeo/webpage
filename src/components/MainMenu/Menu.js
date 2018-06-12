@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Icon from 'react-fontawesome';
+import { Tooltip } from 'reactstrap';
 import './Menu.css';
 
 
@@ -7,11 +8,19 @@ class Menu extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {addClass: false}
+    this.state = {
+      addClass: false,
+      tooltipOpen: false
+    }
+    this.hanldeToolTips = this.hanldeToolTips.bind(this);
   }
 
   handleClick(){
     this.setState({addClass: !this.state.addClass});
+  }
+
+  hanldeToolTips() {
+    this.setState({tooltipOpen: !this.state.tooltipOpen});
   }
 
   render() {
@@ -31,6 +40,9 @@ class Menu extends Component {
           <a id="btn-show-menu" href="javascript:;" className={(this.state.addClass)? 'menu-fixed':''} onClick={this.handleClick.bind(this)}>
             <i className={iconBtn.join(' ')}></i>
           </a>
+          <Tooltip placement="right" isOpen={this.state.tooltipOpen} target="btn-show-menu" toggle={this.hanldeToolTips}>
+            on/off menu
+          </Tooltip>
           <div className={boxClass.join(' ')}>
             <ul>
               <li><a href="./"><Icon name='home'/> Home</a></li>

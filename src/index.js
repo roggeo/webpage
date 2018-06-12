@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import IndexHome from './scenes/Home/IndexHome';
 import IndexAbout from './scenes/About/IndexAbout';
+import IndexContact from './scenes/Contact/IndexContact';
 import NotFound from './scenes/Error/404/NotFound';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import registerServiceWorker from './services/registerServiceWorker';
@@ -30,6 +31,7 @@ class App extends React.Component{
                 <Switch>
                     <Route exact path='/' component={IndexHome}/>
                     <Route path='/about' component={IndexAbout}/>
+                    <Route path='/contact' component={IndexContact}/>
                     <Route path="/*" component={NotFound} />
                 </Switch>
             </Router>

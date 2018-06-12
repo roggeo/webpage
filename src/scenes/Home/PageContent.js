@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import './PageContent.css';
-import Icon from 'react-fontawesome';
-import { Button } from 'reactstrap';
-
 
 class PageContent extends Component {
     render(){
@@ -30,11 +27,6 @@ class PageContent extends Component {
                         <p>Incredible tool to make beatiful pages</p>
                     </div>
                 </article>
-                <p className="text-center">
-                <Button color="primary">
-                    <Icon name='code'/> Get code of this
-                </Button>
-                </p>
             </section>
         );
     }

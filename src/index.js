@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import IndexHome from './scenes/Home/IndexHome';
 import IndexAbout from './scenes/About/IndexAbout';
-import NotFound from './scenes/Error/NotFound';
+import NotFound from './scenes/Error/404/NotFound';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import registerServiceWorker from './services/registerServiceWorker';
 

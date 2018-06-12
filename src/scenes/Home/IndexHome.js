@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import MainMenu from './../../components/MainMenu/Menu';
+import Header from './../../components/Header/Header';
 import Footer from './../../components/Footer/Footer';
-import logo from './../../resources/logo.svg';
 import './IndexHome.css';
 import PageContent from './PageContent';
 
@@ -10,9 +10,7 @@ class IndexHome extends Component {
     return (
       <div className="app">
         <MainMenu/>
-        <header className="app-header">
-          <img src={logo} className="app-logo" alt="logo" />
-        </header>
+        <Header/>
         <PageContent/>
         <Footer/>
       </div>

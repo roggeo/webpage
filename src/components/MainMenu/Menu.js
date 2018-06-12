@@ -33,11 +33,11 @@ class Menu extends Component {
           </a>
           <div className={boxClass.join(' ')}>
             <ul>
-              <li><a href="#"><Icon name='home'/> Home</a></li>
-              <li><a href="#"><Icon name='user-astronaut'/> About me</a></li>
-              <li><a href="#"><Icon name='comment'/> Contact</a></li>
-              <li><a href="#"><i className="fab fa-github"></i> Github</a></li>
-              <li><a href="#"><Icon name='code'/> Code of this</a></li>
+              <li><a href="./"><Icon name='home'/> Home</a></li>
+              <li><a href="./about"><Icon name='user-astronaut'/> About me</a></li>
+              <li><a href="./contact"><Icon name='comment'/> Contact</a></li>
+              <li><a href="https://github.com/roggeo"><i className="fab fa-github"></i> Github</a></li>
+              <li><a href="https://github.com.br/roggeo/webpage"><Icon name='code'/> Code of this</a></li>
             </ul>
           </div>
         </div>

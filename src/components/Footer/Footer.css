@@ -1,5 +1,9 @@
+.app footer{
+    background: #b2e4c9;
+    padding-top: 18px;
+}
 .footer-wrap {
-    background: #06111b;
+    background: #222c35;
     padding: 20px 15px;
     color: white;
 }

@@ -1,20 +1,3 @@
-.app-logo {
-  height: 50px;
-}
-
-.app-header {
-  background: #222c35;
-  padding: 10px 20px;
-  color: white;
-  text-align: center;
-}
-
 .app-title {
-  font-size: 1.6em;
-}
-
-@media screen and (max-width: 442px){
-  .app-logo {
-    height: 30px;
-  }
+    font-size: 1.6em;
 }

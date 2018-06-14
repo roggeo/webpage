@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Icon from 'react-fontawesome';
 import { Tooltip } from 'reactstrap';
+import { Link } from 'react-router-dom'
 import './Menu.css';
 
 
@@ -45,11 +46,11 @@ class Menu extends Component {
           </Tooltip>
           <div className={boxClass.join(' ')}>
             <ul>
-              <li><a href="./"><Icon name='home'/> Home</a></li>
-              <li><a href="./about"><Icon name='user-astronaut'/> About me</a></li>
-              <li><a href="./contact"><Icon name='comment'/> Contact</a></li>
+              <li><Link to="/"><Icon name='home'/> Home</Link></li>
+              <li><Link to="/about"><Icon name='user-astronaut'/> About me</Link></li>
+              <li><Link to="./contact"><Icon name='comment'/> Contact</Link></li>
               <li><a href="https://github.com/roggeo"><i className="fab fa-github"></i> Github</a></li>
-              <li><a href="https://github.com.br/roggeo/webpage"><Icon name='code'/> Code of this</a></li>
+              <li><a href="https://github.com/roggeo/webpage"><Icon name='code'/> Code of this</a></li>
             </ul>
           </div>
         </div>

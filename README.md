@@ -1,26 +1,26 @@
 # Webpage
 
-The webpage.
+The web personal page.
 
 
 ## Install
 
-    git clone 
+    git clone git@github.com:roggeo/webpage.git
 
 
 ## Running
 
-    cd wepage
+    cd webpage
     npm start    
 
 
 ## Test
 
-    cd wepage
+    cd wepbage
     npm test
 
 
 ## Building
 
-    cd wepage
+    cd webpage
     npm run build

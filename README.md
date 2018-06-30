@@ -11,17 +11,25 @@ The web personal page.
 
 ## Running
 
+Running front
+
     cd webpage
     npm start    
 
+Look at [localhost:3000](http://localhost:3000)
+    
+Now running API server
+   
+    cd api
+    npm start
+
+Look at [localhost:3000](http://localhost:3003)
 
 ## Test
 
-    cd wepbage
     npm test
 
 
-## Building
+## Building React project
 
-    cd webpage
     npm run build

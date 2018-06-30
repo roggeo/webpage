@@ -5,25 +5,22 @@ The web personal page.
 
 ## Install
 
-    npm install
     git clone git@github.com:roggeo/webpage.git
-
+    cd webpage
+    npm install
+    cd api
+    npm install
+    cd ../
 
 ## Running
 
-Running front
 
-    cd webpage
-    npm start    
+    sudo npm start & npm start --prefix api
+
 
 Look at [localhost:3000](http://localhost:3000)
-    
-Now running API server
-   
-    cd api
-    npm start
 
-Look at [localhost:3000](http://localhost:3003)
+and server [localhost:3003](http://localhost:3003)
 
 ## Test
 
@@ -33,3 +30,12 @@ Look at [localhost:3000](http://localhost:3003)
 ## Building React project
 
     npm run build
+
+
+## Stopping ports in Linux
+
+    sudo kill $(sudo lsof -t -i:3003)
+
+    # or 
+
+    fuser -n tcp -k 3003

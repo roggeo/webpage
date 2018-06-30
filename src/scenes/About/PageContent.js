@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './PageContent.css';
-import Icon from 'react-fontawesome';
+// import Icon from 'react-fontawesome';
 
 class PageContent extends Component {
 

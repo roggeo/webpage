@@ -2,6 +2,8 @@
 
 The web personal page.
 
+Example [roggeo.net](http://roggeo.net)
+
 
 ## Install
 
@@ -20,7 +22,7 @@ The web personal page.
 
 Look at [localhost:3000](http://localhost:3000)
 
-and server [localhost:3003](http://localhost:3003)
+and server (api folder)  [localhost:3003](http://localhost:3003)
 
 ## Test
 

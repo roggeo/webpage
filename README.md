@@ -14,7 +14,9 @@ Example [roggeo.net](http://roggeo.net)
     npm install
     cd ../
 
-## Running
+Note: two application go run Client and API.
+
+## Running in DEV mode
 
 
     sudo npm start & npm start --prefix api
@@ -29,9 +31,16 @@ and server (api folder)  [localhost:3003](http://localhost:3003)
     npm test
 
 
-## Building React project
+## Deploy
 
-    npm run build
+1 - Configure ``/config/RestApi.js``
+
+2 - Build the project: ``npm run build``. Loot at build folder
+
+3 - Move files in build folder to remote server
+
+4 - Move the API folder to Node enviroment
+
 
 
 ## Stopping ports in Linux

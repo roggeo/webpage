@@ -27,18 +27,20 @@ Look at [localhost:3000](http://localhost:3000)
 
 ## Deploy
 
-1 - Configure ``/config/RestApi.js``
+1 - Configure ``/public/manifest.json``
 
-2 - Build the project: ``npm run build``. Loot at ``build`` folder
+2 - Configure ``/.env``
 
-3 - Move files in build folder to remote server
+4 - Build the project: ``npm run build``. Loot at ``build`` folder
+
+5 - Move files in build folder to remote server
+
+6 - Move files in api folder to remote server
 
 
 
 ## Stopping ports in Linux
 
-    sudo kill $(sudo lsof -t -i:3000)
-
-    # or 
+    lsof -i TCP:3000 | grep LISTEN
 
     fuser -n tcp -k 3000

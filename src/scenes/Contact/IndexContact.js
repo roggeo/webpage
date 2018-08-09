@@ -12,7 +12,7 @@ class IndexContact extends Component {
       <div className="app">
         <HeadSeo
           title="Contact"
-          description="Do you some question contact me."
+          description="Do you have some question? Contact me."
           uri = "contact"
           />
         <MainMenu/>

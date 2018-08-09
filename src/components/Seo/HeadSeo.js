@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import {Helmet} from "react-helmet";
-import AppConfig from './../../config/AppConfig';
 
 class HeadSeo extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-        pageTitle: AppConfig.NAME +' - '+ AppConfig.TITLE_DEFAULT,
-        pageDescription: AppConfig.DESCRIPTION,
-        pageKeywords: AppConfig.KEYWORDS,
-        pageURI: AppConfig.URL
+        pageTitle: process.env.REACT_APP_NAME +' - '+ process.env.REACT_APP_TITLE_DEFAULT,
+        pageDescription: process.env.REACT_APP_DESCRIPTION,
+        pageKeywords: process.env.REACT_APP_KEYWORDS,
+        pageURI: process.env.REACT_APP_URL
     }
     this.setPageTitle(this.props.title);
     this.setPageDescription(this.props.description);
@@ -20,7 +19,7 @@ class HeadSeo extends Component {
 
   setPageTitle(title) {
     if (title) {
-        this.state.pageTitle = title +' - '+ AppConfig.NAME;
+        this.state.pageTitle = title +' - '+ process.env.REACT_APP_NAME;
     }
   }
 

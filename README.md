@@ -33,10 +33,7 @@ Look at [localhost:3000](http://localhost:3000)
 
 4 - Build the project: ``npm run build``. Loot at ``build`` folder
 
-5 - Move files in build folder to remote server
-
-6 - Move files in api folder to remote server
-
+5 - Move files in build folder to your remote server
 
 
 ## Stopping ports in Linux

@@ -38,9 +38,9 @@ class Menu extends Component {
 
     return (
         <div>
-          <a id="btn-show-menu" href="javascript:;" className={(this.state.addClass)? 'menu-fixed':''} onClick={this.handleClick.bind(this)}>
+          <span id="btn-show-menu" className={(this.state.addClass)? 'menu-fixed':''} onClick={this.handleClick.bind(this)}>
             <i className={iconBtn.join(' ')}></i>
-          </a>
+          </span>
           <Tooltip placement="right" isOpen={this.state.tooltipOpen} target="btn-show-menu" toggle={this.hanldeToolTips}>
             on/off menu
           </Tooltip>

@@ -17,7 +17,7 @@ class Routes extends React.Component{
                     <Route exact path='/' component={IndexHome}/>
                     <Route path='/about' component={IndexAbout}/>
                     <Route path='/contact' component={IndexContact}/>
-                    <Route path="/*" component={NotFound} />
+                    <Route path="/*" component={NotFound} />                    
                 </Switch>
             </Router>
         );

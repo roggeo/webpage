@@ -1,53 +1,74 @@
 import React, { Component } from 'react';
 import './PageContent.css';
-
-
-const CONTENT = [
-    {
-        "title": "PHP",
-        "content": "This is technology to use in server side. It's going make your website smarty and save your datas."
-    },
-    {
-        "title": "Zend Framework",
-        "content": "It is a powerful tool for use in PHP technology.."
-    },
-    {
-        "title": "NodeJS",
-        "content": "Amazing plataform to running a commun tecnology in all browsers, smarty TVs and smarty phones around the world, JavaScript."
-    },
-    {
-        "title": "Express",
-        "content": "It is a beultiful tool to make websites on NodeJS."
-    },
-    {
-        "title": "ReactJS",
-        "content": "Incredible tool to make beatiful pages."
-    }
-];
+import { Container, Row, Col } from 'reactstrap';
 
 class PageContent extends Component {
 
     constructor(props) {
-        super(props);    
+        super(props);
+        this.state = {
+            error: null,
+            isLoaded: false,
+            ajaxContent: []
+        };
     }
 
-    render(){
-        return(
-            <section className="page-content-wrap">
-                <article className="content">
-                
-                    {CONTENT.map((item, i) => (
-                        <div className="article-box-list" >
-                            <h1>{item.title}</h1>
-                            <p>{item.content}</p>
-                        </div>
-                        )
-                    )}                    
+    componentDidMount() {
+        this.ajaxDatas();
+    }
 
-                </article>
-            </section>
+    ajaxDatas() {
+
+        //Configure url to request home contents
+        let API_URL = process.env.REACT_APP_API_URL+'/home.json';
+
+        fetch(API_URL)
+            .then(response => response.json())
+            .then((result) => {
+                this.setState({
+                  isLoaded: true,
+                  ajaxContent: result.data
+                });
+              },
+              (error) => {
+                this.setState({
+                  isLoaded: true,
+                  error
+                });
+              }
         );
     }
+
+    render() {
+
+        const { error, isLoaded, ajaxContent } = this.state;
+
+        if (error) {
+            return <div>Error: {error.message}</div>;
+        } else if (!isLoaded) {
+            return <div>Loading...</div>;
+        } else {
+            return (
+                <section className="page-content-wrap">
+                    <Container>
+                        {ajaxContent.map((item, i) => (
+                        <Row className="article-box-list">
+                            <Col xs="3" md="2">                                
+                                <img src={item.media.images[0].small} alt={item.media.images[0].title}/>
+                            </Col>
+                            <Col xs="9" md="10">
+                                <h1>{item.title}</h1>
+                                <p>{item.content}</p>
+                            </Col>
+                            <Col><hr/></Col>                         
+                        </Row>
+                        ))}
+                    </Container>
+                </section>
+            );
+        }
+    }
+
 }
 
 export default PageContent;

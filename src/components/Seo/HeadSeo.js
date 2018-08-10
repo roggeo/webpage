@@ -3,14 +3,18 @@ import {Helmet} from "react-helmet";
 
 class HeadSeo extends Component {
 
+  pageHead = {};
+
   constructor(props) {
     super(props);
-    this.state = {
-        pageTitle: process.env.REACT_APP_NAME +' - '+ process.env.REACT_APP_TITLE_DEFAULT,
-        pageDescription: process.env.REACT_APP_DESCRIPTION,
-        pageKeywords: process.env.REACT_APP_KEYWORDS,
-        pageURI: process.env.REACT_APP_URL
-    }
+
+    this.pageHead = {
+      pageTitle: process.env.REACT_APP_NAME +' - '+ process.env.REACT_APP_TITLE_DEFAULT,
+      pageDescription: process.env.REACT_APP_DESCRIPTION,
+      pageKeywords: process.env.REACT_APP_KEYWORDS,
+      pageURI: process.env.REACT_APP_URL
+    };
+
     this.setPageTitle(this.props.title);
     this.setPageDescription(this.props.description);
     this.setPageKeywords(this.props.keywords);
@@ -19,25 +23,25 @@ class HeadSeo extends Component {
 
   setPageTitle(title) {
     if (title) {
-        this.state.pageTitle = title +' - '+ process.env.REACT_APP_NAME;
+        this.pageHead.pageTitle = title +' - '+ process.env.REACT_APP_NAME;
     }
   }
 
   setPageDescription(text) {
     if (text) {
-        this.state.pageDescription = text;
+        this.pageHead.pageDescription = text;
     }
   }
 
   setPageKeywords(text) {
     if (text) {
-        this.state.pageKeywords = text;
+        this.pageHead.pageKeywords = text;
     }
   }
 
   setPageURI(uri) {
     if (uri) {
-        this.state.pageURI += '/' + uri;
+        this.pageHead.pageURI += '/' + uri;
     }
   }
 
@@ -45,10 +49,10 @@ class HeadSeo extends Component {
 
     return (
         <Helmet>
-          <title>{this.state.pageTitle}</title>
-          <link rel="canonical" href={this.state.pageURI} />
-          <meta name="description" content={this.state.pageDescription} />
-          <meta name="keywords" content={this.state.pageKeywords} />
+          <title>{this.pageHead.pageTitle}</title>
+          <link rel="canonical" href={this.pageHead.pageURI} />
+          <meta name="description" content={this.pageHead.pageDescription} />
+          <meta name="keywords" content={this.pageHead.pageKeywords} />
         </Helmet>
     );
   }

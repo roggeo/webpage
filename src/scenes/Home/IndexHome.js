@@ -5,6 +5,7 @@ import Footer from './../../components/Footer/Footer';
 import './IndexHome.css';
 import PageContent from './PageContent';
 import HeadSeo from './../../components/Seo/HeadSeo';
+import MainBanner from './../../components/Banner/MainBanner';
 
 
 class IndexHome extends Component {
@@ -14,6 +15,7 @@ class IndexHome extends Component {
         <HeadSeo/>
         <MainMenu/>
         <Header/>
+        <MainBanner/>
         <PageContent/>
         <Footer/>
       </div>

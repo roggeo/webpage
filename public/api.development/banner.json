@@ -1,0 +1,32 @@
+{
+    "data":[{
+        "id": 1,
+        "title": "",
+        "content": "",
+        "description": "",
+        "media": {
+            "images": [
+                {
+                    "large": "api/imgs/banner-1-950x350.jpg",
+                    "small": "",
+                    "title": "Slide 1"
+                }
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "title": "",
+        "content": "",
+        "description": "",
+        "media": {
+            "images": [
+                {
+                    "large": "api/imgs/banner-2-950x350.jpg",
+                    "small": "",
+                    "title": "Slide 2"
+                }
+            ]
+        }
+    }]
+}

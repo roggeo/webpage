@@ -16,6 +16,7 @@ Example [roggeo.net](http://roggeo.net)
 
 ## Running in DEV mode
 
+Rename ``/public/api.development`` to ``/public/api``
 
     npm start
 

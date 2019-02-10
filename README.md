@@ -5,6 +5,9 @@ The web personal page.
 Example [roggeo.net](http://roggeo.net)
 
 
+<p align='center'><img src='screenshot.png' width='560' alt=''></p>
+
+
 ## Install
 
     git clone git@github.com:roggeo/webpage.git
@@ -34,10 +37,3 @@ Look at [localhost:3000](http://localhost:3000)
 4 - Build the project: ``npm run build``. Loot at ``build`` folder
 
 5 - Move files in build folder to your remote server
-
-
-## Stopping ports in Linux
-
-    lsof -i TCP:3000 | grep LISTEN
-
-    fuser -n tcp -k 3000
